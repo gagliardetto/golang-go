@@ -20,7 +20,7 @@ import (
 	"go/ast"
 	"go/parser"
 	"go/token"
-	"github.com/gagliardetto/codemill/not-internal/xcoff"
+	"github.com/gagliardetto/golang-go/not-internal/xcoff"
 	"math"
 	"os"
 	"strconv"

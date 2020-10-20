@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/lockedfile"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/lockedfile"
 )
 
 func isPowerOf2(x int) bool {

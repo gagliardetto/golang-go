@@ -5,9 +5,9 @@
 package s390x
 
 import (
-	"github.com/gagliardetto/codemill/cmd/compile/internal/gc"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/s390x"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/gc"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/s390x"
 )
 
 // clearLoopCutOff is the (somewhat arbitrary) value above which it is better

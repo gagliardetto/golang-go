@@ -6,7 +6,7 @@
 package modcmd
 
 import (
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
 )
 
 var CmdMod = &base.Command{

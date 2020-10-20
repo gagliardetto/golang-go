@@ -9,13 +9,13 @@ import (
 	"math"
 	"math/bits"
 
-	"github.com/gagliardetto/codemill/cmd/compile/internal/gc"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/logopt"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/ssa"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/types"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/arm"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/gc"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/logopt"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/ssa"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/types"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/arm"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 )
 
 // loadByType returns the load instruction of the given type.

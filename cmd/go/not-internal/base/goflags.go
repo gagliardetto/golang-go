@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
 )
 
 var (

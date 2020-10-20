@@ -6,8 +6,8 @@
 package doc
 
 import (
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
 )
 
 var CmdDoc = &base.Command{

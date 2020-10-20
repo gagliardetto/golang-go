@@ -19,9 +19,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/lockedfile"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/lockedfile"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
 )
 
 // Downloaded size limits.

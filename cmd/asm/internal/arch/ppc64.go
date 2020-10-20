@@ -9,8 +9,8 @@
 package arch
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/ppc64"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/ppc64"
 )
 
 func jumpPPC64(word string) bool {

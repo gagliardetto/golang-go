@@ -5,7 +5,7 @@
 package ld
 
 import (
-	"github.com/gagliardetto/codemill/cmd/link/internal/sym"
+	"github.com/gagliardetto/golang-go/cmd/link/internal/sym"
 	"encoding/binary"
 	"fmt"
 	"os"

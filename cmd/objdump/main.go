@@ -40,7 +40,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/internal/objfile"
+	"github.com/gagliardetto/golang-go/cmd/internal/objfile"
 )
 
 var printCode = flag.Bool("S", false, "print go code alongside assembly")

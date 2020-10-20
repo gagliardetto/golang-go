@@ -7,12 +7,12 @@ package mips
 import (
 	"math"
 
-	"github.com/gagliardetto/codemill/cmd/compile/internal/gc"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/logopt"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/ssa"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/types"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/mips"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/gc"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/logopt"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/ssa"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/types"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/mips"
 )
 
 // isFPreg reports whether r is an FP register

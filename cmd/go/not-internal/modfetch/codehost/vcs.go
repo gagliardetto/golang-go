@@ -7,7 +7,7 @@ package codehost
 import (
 	"errors"
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/lazyregexp"
+	"github.com/gagliardetto/golang-go/not-internal/lazyregexp"
 	"io"
 	"io/ioutil"
 	"os"
@@ -18,9 +18,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/lockedfile"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/par"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/lockedfile"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/par"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
 )
 
 // A VCSError indicates an error using a version control system.

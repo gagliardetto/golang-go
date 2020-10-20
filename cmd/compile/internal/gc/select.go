@@ -4,7 +4,7 @@
 
 package gc
 
-import "github.com/gagliardetto/codemill/cmd/compile/internal/types"
+import "github.com/gagliardetto/golang-go/cmd/compile/internal/types"
 
 // select
 func typecheckselect(sel *Node) {

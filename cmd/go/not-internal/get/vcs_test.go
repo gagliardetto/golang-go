@@ -6,14 +6,14 @@ package get
 
 import (
 	"errors"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io/ioutil"
 	"os"
 	"path"
 	"path/filepath"
 	"testing"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/web"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/web"
 )
 
 // Test that RepoRootForImportPath determines the correct RepoRoot for a given importPath.

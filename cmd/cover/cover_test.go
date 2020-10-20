@@ -12,7 +12,7 @@ import (
 	"go/ast"
 	"go/parser"
 	"go/token"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -390,7 +390,7 @@ func TestCoverHTML(t *testing.T) {
 	buildCover(t)
 
 	// go test -coverprofile testdata/html/html.cov cmd/cover/testdata/html
-	cmd := exec.Command(testenv.GoToolPath(t), "test", toolexecArg, "-coverprofile", htmlProfile, "github.com/gagliardetto/codemill/cmd/cover/testdata/html")
+	cmd := exec.Command(testenv.GoToolPath(t), "test", toolexecArg, "-coverprofile", htmlProfile, "github.com/gagliardetto/golang-go/cmd/cover/testdata/html")
 	run(cmd, t)
 	// testcover -html testdata/html/html.cov -o testdata/html/html.html
 	cmd = exec.Command(testcover, "-html", htmlProfile, "-o", htmlHTML)

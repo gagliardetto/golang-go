@@ -5,7 +5,7 @@
 package s390x
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
 )
 
 // This file contains utility functions for use when

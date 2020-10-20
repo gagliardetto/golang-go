@@ -81,7 +81,7 @@ type test struct {
 	no   []string // Regular expressions that should not match.
 }
 
-const p = "github.com/gagliardetto/codemill/cmd/doc/testdata"
+const p = "github.com/gagliardetto/golang-go/cmd/doc/testdata"
 
 var tests = []test{
 	// Sanity check.

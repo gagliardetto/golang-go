@@ -7,7 +7,7 @@ package lex
 import (
 	"text/scanner"
 
-	"github.com/gagliardetto/codemill/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
 )
 
 // A Stack is a stack of TokenReaders. As the top TokenReader hits EOF,

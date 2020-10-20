@@ -30,7 +30,7 @@
 
 package x86
 
-import "github.com/gagliardetto/codemill/cmd/internal/obj"
+import "github.com/gagliardetto/golang-go/cmd/internal/obj"
 
 const (
 	REG_NONE = 0

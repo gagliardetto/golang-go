@@ -5,11 +5,11 @@
 package riscv64
 
 import (
-	"github.com/gagliardetto/codemill/cmd/compile/internal/gc"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/ssa"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/types"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/riscv"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/gc"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/ssa"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/types"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/riscv"
 )
 
 // ssaRegToReg maps ssa register numbers to obj register numbers.

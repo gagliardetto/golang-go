@@ -1,14 +1,14 @@
 package ssa_test
 
 import (
-	cmddwarf "github.com/gagliardetto/codemill/cmd/internal/dwarf"
+	cmddwarf "github.com/gagliardetto/golang-go/cmd/internal/dwarf"
 	"debug/dwarf"
 	"debug/elf"
 	"debug/macho"
 	"debug/pe"
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
-	"github.com/gagliardetto/codemill/not-internal/xcoff"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/xcoff"
 	"io"
 	"os"
 	"runtime"

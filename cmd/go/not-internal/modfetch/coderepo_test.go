@@ -9,7 +9,7 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"hash"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io"
 	"io/ioutil"
 	"log"
@@ -19,8 +19,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modfetch/codehost"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modfetch/codehost"
 
 	"golang.org/x/mod/sumdb/dirhash"
 )

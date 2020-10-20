@@ -17,7 +17,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modfetch/codehost"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modfetch/codehost"
 
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/module"

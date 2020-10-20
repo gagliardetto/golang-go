@@ -5,14 +5,14 @@
 package gc
 
 import (
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"os/exec"
 	"strings"
 	"testing"
 )
 
 func TestDeps(t *testing.T) {
-	out, err := exec.Command(testenv.GoToolPath(t), "list", "-f", "{{.Deps}}", "github.com/gagliardetto/codemill/cmd/compile/internal/gc").Output()
+	out, err := exec.Command(testenv.GoToolPath(t), "list", "-f", "{{.Deps}}", "github.com/gagliardetto/golang-go/cmd/compile/internal/gc").Output()
 	if err != nil {
 		t.Fatal(err)
 	}

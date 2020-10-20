@@ -4,7 +4,7 @@
 
 package main
 
-import "github.com/gagliardetto/codemill/cmd/link/internal/ld/testdata/issue32233/lib"
+import "github.com/gagliardetto/golang-go/cmd/link/internal/ld/testdata/issue32233/lib"
 
 func main() {
 	lib.DoC()

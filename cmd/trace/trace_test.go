@@ -8,7 +8,7 @@ package main
 
 import (
 	"context"
-	"github.com/gagliardetto/codemill/not-internal/trace"
+	"github.com/gagliardetto/golang-go/not-internal/trace"
 	"io/ioutil"
 	rtrace "runtime/trace"
 	"strings"

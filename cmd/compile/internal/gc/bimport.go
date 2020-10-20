@@ -5,7 +5,7 @@
 package gc
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
 )
 
 // numImport tracks how often a package with a given name is imported.

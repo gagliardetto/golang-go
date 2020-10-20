@@ -6,7 +6,7 @@ package gc
 
 import (
 	"bufio"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io"
 	"math/bits"
 	"os/exec"

@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/lockedfile"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/lockedfile"
 )
 
 func mustTempDir(t *testing.T) (dir string, remove func()) {

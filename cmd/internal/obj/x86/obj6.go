@@ -31,10 +31,10 @@
 package x86
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
 	"math"
 	"strings"
 )

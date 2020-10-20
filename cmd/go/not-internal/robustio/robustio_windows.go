@@ -6,7 +6,7 @@ package robustio
 
 import (
 	"errors"
-	"github.com/gagliardetto/codemill/not-internal/syscall/windows"
+	"github.com/gagliardetto/golang-go/not-internal/syscall/windows"
 	"syscall"
 )
 

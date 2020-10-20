@@ -15,10 +15,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cmdflag"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/work"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cmdflag"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/work"
 )
 
 // go vet flag processing

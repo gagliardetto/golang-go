@@ -6,7 +6,7 @@ package ssa
 
 import (
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
 	"fmt"
 	"html"
 	"io"

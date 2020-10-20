@@ -5,8 +5,8 @@
 package goobj
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/goobj2"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/goobj2"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 	"fmt"
 	"strings"
 )

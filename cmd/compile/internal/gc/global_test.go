@@ -6,7 +6,7 @@ package gc
 
 import (
 	"bytes"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"

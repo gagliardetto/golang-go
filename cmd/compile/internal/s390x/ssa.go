@@ -7,12 +7,12 @@ package s390x
 import (
 	"math"
 
-	"github.com/gagliardetto/codemill/cmd/compile/internal/gc"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/logopt"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/ssa"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/types"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/s390x"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/gc"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/logopt"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/ssa"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/types"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/s390x"
 )
 
 // markMoves marks any MOVXconst ops that need to avoid clobbering flags.

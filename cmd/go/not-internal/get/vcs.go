@@ -8,8 +8,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/lazyregexp"
-	"github.com/gagliardetto/codemill/not-internal/singleflight"
+	"github.com/gagliardetto/golang-go/not-internal/lazyregexp"
+	"github.com/gagliardetto/golang-go/not-internal/singleflight"
 	"log"
 	urlpkg "net/url"
 	"os"
@@ -19,10 +19,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/load"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/web"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/load"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/web"
 )
 
 // A vcsCmd describes how to use a version control system

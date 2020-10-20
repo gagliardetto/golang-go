@@ -549,7 +549,7 @@ var deptab = []struct {
 	prefix string   // prefix of target
 	dep    []string // dependency tweaks for targets with that prefix
 }{
-	{"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg", []string{
+	{"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg", []string{
 		"zdefaultcc.go",
 		"zosarch.go",
 	}},
@@ -644,7 +644,7 @@ func runInstall(pkg string, ch chan struct{}) {
 	// ispkg predicts whether the package should be linked as a binary, based
 	// on the name. There should be no "main" packages in vendor, since
 	// 'go mod vendor' will only copy imported packages there.
-	ispkg := !strings.HasPrefix(pkg, "github.com/gagliardetto/codemill/cmd/") || strings.Contains(pkg, "/internal/") || strings.Contains(pkg, "/vendor/")
+	ispkg := !strings.HasPrefix(pkg, "github.com/gagliardetto/golang-go/cmd/") || strings.Contains(pkg, "/internal/") || strings.Contains(pkg, "/vendor/")
 
 	// Start final link command line.
 	// Note: code below knows that link.p[targ] is the target.
@@ -872,7 +872,7 @@ func runInstall(pkg string, ch chan struct{}) {
 	// For packages containing assembly, this writes go_asm.h, which
 	// the assembly files will need.
 	pkgName := pkg
-	if strings.HasPrefix(pkg, "github.com/gagliardetto/codemill/cmd/") && strings.Count(pkg, "/") == 1 {
+	if strings.HasPrefix(pkg, "github.com/gagliardetto/golang-go/cmd/") && strings.Count(pkg, "/") == 1 {
 		pkgName = "main"
 	}
 	b := pathf("%s/_go_.a", workdir)
@@ -1020,7 +1020,7 @@ func shouldbuild(file, pkg string) bool {
 		if code == "package documentation" {
 			return false
 		}
-		if code == "package main" && pkg != "github.com/gagliardetto/codemill/cmd/go" && pkg != "github.com/gagliardetto/codemill/cmd/cgo" {
+		if code == "package main" && pkg != "github.com/gagliardetto/golang-go/cmd/go" && pkg != "github.com/gagliardetto/golang-go/cmd/cgo" {
 			return false
 		}
 		if !strings.HasPrefix(p, "//") {
@@ -1083,8 +1083,8 @@ var runtimegen = []string{
 // cleanlist is a list of packages with generated files and commands.
 var cleanlist = []string{
 	"runtime/internal/sys",
-	"github.com/gagliardetto/codemill/cmd/cgo",
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg",
+	"github.com/gagliardetto/golang-go/cmd/cgo",
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg",
 	"go/build",
 }
 
@@ -1100,7 +1100,7 @@ func clean() {
 			}
 		}
 		// Remove generated binary named for directory.
-		if strings.HasPrefix(name, "github.com/gagliardetto/codemill/cmd/") {
+		if strings.HasPrefix(name, "github.com/gagliardetto/golang-go/cmd/") {
 			xremove(pathf("%s/%s", path, name[4:]))
 		}
 	}
@@ -1221,7 +1221,7 @@ func timelog(op, name string) {
 	fmt.Fprintf(timeLogFile, "%s %+.1fs %s %s\n", t.Format(time.UnixDate), t.Sub(timeLogStart).Seconds(), op, name)
 }
 
-var toolchain = []string{"github.com/gagliardetto/codemill/cmd/asm", "github.com/gagliardetto/codemill/cmd/cgo", "github.com/gagliardetto/codemill/cmd/compile", "github.com/gagliardetto/codemill/cmd/link"}
+var toolchain = []string{"github.com/gagliardetto/golang-go/cmd/asm", "github.com/gagliardetto/golang-go/cmd/cgo", "github.com/gagliardetto/golang-go/cmd/compile", "github.com/gagliardetto/golang-go/cmd/link"}
 
 // The bootstrap command runs a build from scratch,
 // stopping at having installed the go_bootstrap command.
@@ -1257,7 +1257,7 @@ func cmdbootstrap() {
 
 	if debug {
 		// cmd/buildid is used in debug mode.
-		toolchain = append(toolchain, "github.com/gagliardetto/codemill/cmd/buildid")
+		toolchain = append(toolchain, "github.com/gagliardetto/golang-go/cmd/buildid")
 	}
 
 	if isdir(pathf("%s/src/pkg", goroot)) {
@@ -1296,7 +1296,7 @@ func cmdbootstrap() {
 	timelog("build", "go_bootstrap")
 	xprintf("Building Go bootstrap cmd/go (go_bootstrap) using Go toolchain1.\n")
 	install("runtime") // dependency not visible in sources; also sets up textflag.h
-	install("github.com/gagliardetto/codemill/cmd/go")
+	install("github.com/gagliardetto/golang-go/cmd/go")
 	if vflag > 0 {
 		xprintf("\n")
 	}
@@ -1496,7 +1496,7 @@ func checkNotStale(goBinary string, targets ...string) {
 		}, targets...)...)
 	if strings.Contains(out, "\tSTALE ") {
 		os.Setenv("GODEBUG", "gocachehash=1")
-		for _, target := range []string{"runtime/internal/sys", "github.com/gagliardetto/codemill/cmd/dist", "github.com/gagliardetto/codemill/cmd/link"} {
+		for _, target := range []string{"runtime/internal/sys", "github.com/gagliardetto/golang-go/cmd/dist", "github.com/gagliardetto/golang-go/cmd/link"} {
 			if strings.Contains(out, "STALE "+target) {
 				run(goroot, ShowOutput|CheckExit, goBinary, "list", "-f={{.ImportPath}} {{.Stale}}", target)
 				break

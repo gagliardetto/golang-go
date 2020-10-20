@@ -4,7 +4,7 @@
 
 package sym
 
-import "github.com/gagliardetto/codemill/cmd/internal/dwarf"
+import "github.com/gagliardetto/golang-go/cmd/internal/dwarf"
 
 // CompilationUnit is an abstraction used by DWARF to represent a chunk of
 // debug-related data. We create a CompilationUnit per Object file in a

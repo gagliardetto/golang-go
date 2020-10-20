@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 
 	"golang.org/x/tools/go/analysis/unitchecker"
 

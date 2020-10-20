@@ -114,10 +114,10 @@
 package ssa
 
 import (
-	"github.com/gagliardetto/codemill/cmd/compile/internal/types"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/types"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
 	"fmt"
 	"math/bits"
 	"unsafe"

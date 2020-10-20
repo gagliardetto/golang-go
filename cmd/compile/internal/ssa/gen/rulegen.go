@@ -557,9 +557,9 @@ func fprint(w io.Writer, n Node) {
 		for _, path := range append([]string{
 			"fmt",
 			"math",
-			"github.com/gagliardetto/codemill/cmd/internal/obj",
-			"github.com/gagliardetto/codemill/cmd/internal/objabi",
-			"github.com/gagliardetto/codemill/cmd/compile/internal/types",
+			"github.com/gagliardetto/golang-go/cmd/internal/obj",
+			"github.com/gagliardetto/golang-go/cmd/internal/objabi",
+			"github.com/gagliardetto/golang-go/cmd/compile/internal/types",
 		}, n.arch.imports...) {
 			fmt.Fprintf(w, "import %q\n", path)
 		}

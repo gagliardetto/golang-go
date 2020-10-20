@@ -9,7 +9,7 @@ package main_test
 import (
 	"bytes"
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"os"
 	"path/filepath"
 	"regexp"

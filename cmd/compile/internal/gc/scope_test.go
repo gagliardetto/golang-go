@@ -5,9 +5,9 @@
 package gc_test
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/objfile"
+	"github.com/gagliardetto/golang-go/cmd/internal/objfile"
 	"debug/dwarf"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"

@@ -5,9 +5,9 @@
 package gc
 
 import (
-	"github.com/gagliardetto/codemill/cmd/compile/internal/types"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/types"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
 )
 
 // The racewalk pass is currently handled in three parts.
@@ -39,7 +39,7 @@ var omit_pkgs = []string{
 	"runtime",
 	"runtime/race",
 	"runtime/msan",
-	"github.com/gagliardetto/codemill/not-internal/cpu",
+	"github.com/gagliardetto/golang-go/not-internal/cpu",
 }
 
 // Only insert racefuncenterfp/racefuncexit into the following packages.

@@ -330,7 +330,7 @@ func (t *tester) registerStdTest(pkg string) {
 
 			timeoutSec := 180
 			for _, pkg := range stdMatches {
-				if pkg == "github.com/gagliardetto/codemill/cmd/go" {
+				if pkg == "github.com/gagliardetto/golang-go/cmd/go" {
 					timeoutSec *= 3
 					break
 				}
@@ -482,7 +482,7 @@ func (t *tester) registerTests() {
 	if goos == "linux" {
 		t.tests = append(t.tests, distTest{
 			name:    "cmd_go_test_terminal",
-			heading: "github.com/gagliardetto/codemill/cmd/go terminal test",
+			heading: "github.com/gagliardetto/golang-go/cmd/go terminal test",
 			fn: func(dt *distTest) error {
 				t.runPending(dt)
 				timelog("start", dt.name)
@@ -1333,7 +1333,7 @@ func (t *tester) raceTest(dt *distTest) error {
 	// slows down all.bash (by 10 seconds on my laptop).
 	// The race builder should catch any error here, but doesn't.
 	// TODO(iant): Figure out how to catch this.
-	// t.addCmd(dt, "src", t.goTest(),  "-race", "-run=TestParallelTest", "github.com/gagliardetto/codemill/cmd/go")
+	// t.addCmd(dt, "src", t.goTest(),  "-race", "-run=TestParallelTest", "github.com/gagliardetto/golang-go/cmd/go")
 	if t.cgoEnabled {
 		// Building misc/cgo/test takes a long time.
 		// There are already cgo-enabled packages being tested with the race detector.

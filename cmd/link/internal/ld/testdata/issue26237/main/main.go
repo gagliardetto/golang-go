@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	b "github.com/gagliardetto/codemill/cmd/link/internal/ld/testdata/issue26237/b.dir"
+	b "github.com/gagliardetto/golang-go/cmd/link/internal/ld/testdata/issue26237/b.dir"
 )
 
 var skyx int

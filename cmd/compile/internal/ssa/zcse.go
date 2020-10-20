@@ -4,7 +4,7 @@
 
 package ssa
 
-import "github.com/gagliardetto/codemill/cmd/compile/internal/types"
+import "github.com/gagliardetto/golang-go/cmd/compile/internal/types"
 
 // zcse does an initial pass of common-subexpression elimination on the
 // function for values with zero arguments to allow the more expensive cse

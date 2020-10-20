@@ -5,13 +5,13 @@
 package ld
 
 import (
-	intdwarf "github.com/gagliardetto/codemill/cmd/internal/dwarf"
-	objfilepkg "github.com/gagliardetto/codemill/cmd/internal/objfile" // renamed to avoid conflict with objfile function
+	intdwarf "github.com/gagliardetto/golang-go/cmd/internal/dwarf"
+	objfilepkg "github.com/gagliardetto/golang-go/cmd/internal/objfile" // renamed to avoid conflict with objfile function
 	"debug/dwarf"
 	"debug/pe"
 	"errors"
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io"
 	"io/ioutil"
 	"os"

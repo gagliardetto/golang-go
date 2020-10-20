@@ -24,12 +24,12 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modinfo"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/par"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/search"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modinfo"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/par"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/search"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
 )
 
 var (
@@ -1321,7 +1321,7 @@ func findInternal(path string) (index int, ok bool) {
 		return len(path) - len("internal"), true
 	case strings.Contains(path, "/internal/"):
 		return strings.LastIndex(path, "/internal/") + 1, true
-	case path == "internal", strings.HasPrefix(path, "github.com/gagliardetto/codemill/not-internal/"):
+	case path == "internal", strings.HasPrefix(path, "github.com/gagliardetto/golang-go/not-internal/"):
 		return 0, true
 	}
 	return 0, false
@@ -1442,9 +1442,9 @@ func InstallTargetDir(p *Package) TargetDir {
 	if strings.HasPrefix(p.ImportPath, "code.google.com/p/go.tools/cmd/") {
 		return StalePath
 	}
-	if p.Goroot && strings.HasPrefix(p.ImportPath, "github.com/gagliardetto/codemill/cmd/") && p.Name == "main" {
+	if p.Goroot && strings.HasPrefix(p.ImportPath, "github.com/gagliardetto/golang-go/cmd/") && p.Name == "main" {
 		switch p.ImportPath {
-		case "github.com/gagliardetto/codemill/cmd/go", "github.com/gagliardetto/codemill/cmd/gofmt":
+		case "github.com/gagliardetto/golang-go/cmd/go", "github.com/gagliardetto/golang-go/cmd/gofmt":
 			return ToBin
 		}
 		return ToTool

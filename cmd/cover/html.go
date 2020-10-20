@@ -7,7 +7,7 @@ package main
 import (
 	"bufio"
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/browser"
+	"github.com/gagliardetto/golang-go/cmd/internal/browser"
 	"fmt"
 	"html/template"
 	"io"

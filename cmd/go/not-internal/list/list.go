@@ -15,13 +15,13 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cache"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/load"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modload"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/work"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cache"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/load"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modload"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/work"
 )
 
 var CmdList = &base.Command{

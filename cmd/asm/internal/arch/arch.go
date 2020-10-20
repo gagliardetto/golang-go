@@ -6,15 +6,15 @@
 package arch
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/arm"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/arm64"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/mips"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/ppc64"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/riscv"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/s390x"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/wasm"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/x86"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/arm"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/arm64"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/mips"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/ppc64"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/riscv"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/s390x"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/wasm"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/x86"
 	"fmt"
 	"strings"
 )

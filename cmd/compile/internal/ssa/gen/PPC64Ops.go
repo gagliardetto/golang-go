@@ -609,7 +609,7 @@ func init() {
 
 	archs = append(archs, arch{
 		name:            "PPC64",
-		pkg:             "github.com/gagliardetto/codemill/cmd/internal/obj/ppc64",
+		pkg:             "github.com/gagliardetto/golang-go/cmd/internal/obj/ppc64",
 		genfile:         "../../ppc64/ssa.go",
 		ops:             ops,
 		blocks:          blocks,

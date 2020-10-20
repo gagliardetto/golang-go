@@ -4,7 +4,7 @@
 
 package ssa
 
-import "github.com/gagliardetto/codemill/cmd/compile/internal/logopt"
+import "github.com/gagliardetto/golang-go/cmd/compile/internal/logopt"
 
 // checkbce prints all bounds checks that are present in the function.
 // Useful to find regressions. checkbce is only activated when with

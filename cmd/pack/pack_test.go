@@ -8,7 +8,7 @@ import (
 	"bufio"
 	"bytes"
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io"
 	"io/ioutil"
 	"os"
@@ -219,7 +219,7 @@ func TestHello(t *testing.T) {
 	}
 
 	goBin := testenv.GoToolPath(t)
-	run(goBin, "build", "github.com/gagliardetto/codemill/cmd/pack") // writes pack binary to dir
+	run(goBin, "build", "github.com/gagliardetto/golang-go/cmd/pack") // writes pack binary to dir
 	run(goBin, "tool", "compile", "hello.go")
 	run("./pack", "grc", "hello.a", "hello.o")
 	run(goBin, "tool", "link", "-o", "a.out", "hello.a")
@@ -287,7 +287,7 @@ func TestLargeDefs(t *testing.T) {
 	}
 
 	goBin := testenv.GoToolPath(t)
-	run(goBin, "build", "github.com/gagliardetto/codemill/cmd/pack") // writes pack binary to dir
+	run(goBin, "build", "github.com/gagliardetto/golang-go/cmd/pack") // writes pack binary to dir
 	run(goBin, "tool", "compile", "large.go")
 	run("./pack", "grc", "large.a", "large.o")
 	run(goBin, "tool", "compile", "-I", ".", "main.go")
@@ -323,7 +323,7 @@ func TestIssue21703(t *testing.T) {
 	}
 
 	goBin := testenv.GoToolPath(t)
-	run(goBin, "build", "github.com/gagliardetto/codemill/cmd/pack") // writes pack binary to dir
+	run(goBin, "build", "github.com/gagliardetto/golang-go/cmd/pack") // writes pack binary to dir
 	run(goBin, "tool", "compile", "a.go")
 	run("./pack", "c", "a.a", "a.o")
 	run(goBin, "tool", "compile", "-I", ".", "b.go")

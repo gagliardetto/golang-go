@@ -5,7 +5,7 @@
 package obj
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
 	"fmt"
 	"testing"
 )

@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
 )
 
 // The flag handling part of go commands such as test is large and distracting.

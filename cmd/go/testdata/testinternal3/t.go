@@ -1,3 +1,3 @@
 package t
 
-import _ "github.com/gagliardetto/codemill/not-internal/does-not-exist"
+import _ "github.com/gagliardetto/golang-go/not-internal/does-not-exist"

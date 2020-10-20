@@ -4,8 +4,8 @@
 package ssa
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/dwarf"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/dwarf"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
 	"encoding/hex"
 	"fmt"
 	"math/bits"

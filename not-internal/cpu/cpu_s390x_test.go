@@ -6,7 +6,7 @@ package cpu_test
 
 import (
 	"errors"
-	. "github.com/gagliardetto/codemill/not-internal/cpu"
+	. "github.com/gagliardetto/golang-go/not-internal/cpu"
 	"io/ioutil"
 	"regexp"
 	"testing"

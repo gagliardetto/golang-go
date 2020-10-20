@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/search"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/search"
 )
 
 // MatchPackage(pattern, cwd)(p) reports whether package p matches pattern in the working directory cwd.
@@ -48,7 +48,7 @@ func MatchPackage(pattern, cwd string) func(*Package) bool {
 	case pattern == "std":
 		return func(p *Package) bool { return p.Standard }
 	case pattern == "cmd":
-		return func(p *Package) bool { return p.Standard && strings.HasPrefix(p.ImportPath, "github.com/gagliardetto/codemill/cmd/") }
+		return func(p *Package) bool { return p.Standard && strings.HasPrefix(p.ImportPath, "github.com/gagliardetto/golang-go/cmd/") }
 	default:
 		matchPath := search.MatchPattern(pattern)
 		return func(p *Package) bool { return matchPath(p.ImportPath) }

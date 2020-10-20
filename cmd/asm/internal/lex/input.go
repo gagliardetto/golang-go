@@ -12,9 +12,9 @@ import (
 	"strings"
 	"text/scanner"
 
-	"github.com/gagliardetto/codemill/cmd/asm/internal/flags"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/flags"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
 )
 
 // Input is the main input: a stack of readers and some macro definitions.

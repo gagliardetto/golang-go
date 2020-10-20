@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/internal/objfile"
+	"github.com/gagliardetto/golang-go/cmd/internal/objfile"
 
 	"github.com/google/pprof/driver"
 	"github.com/google/pprof/profile"

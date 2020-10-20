@@ -9,8 +9,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/help"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modload"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/help"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modload"
 )
 
 func TestDocsUpToDate(t *testing.T) {

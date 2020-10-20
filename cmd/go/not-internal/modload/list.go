@@ -10,11 +10,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modinfo"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/par"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/search"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modinfo"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/par"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/search"
 
 	"golang.org/x/mod/module"
 )

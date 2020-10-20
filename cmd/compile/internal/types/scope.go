@@ -4,7 +4,7 @@
 
 package types
 
-import "github.com/gagliardetto/codemill/cmd/internal/src"
+import "github.com/gagliardetto/golang-go/cmd/internal/src"
 
 // Declaration stack & operations
 

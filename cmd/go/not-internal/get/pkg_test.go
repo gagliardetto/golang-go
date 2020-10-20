@@ -5,7 +5,7 @@
 package get
 
 import (
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
 	"reflect"
 	"strings"
 	"testing"

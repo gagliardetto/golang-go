@@ -8,10 +8,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gagliardetto/codemill/cmd/asm/internal/arch"
-	"github.com/gagliardetto/codemill/cmd/asm/internal/lex"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/arch"
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/lex"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 )
 
 // A simple in-out test: Do we print what we parse?

@@ -12,7 +12,7 @@ import (
 	"context"
 	"fmt"
 	"go/build"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -24,13 +24,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/imports"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/par"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/robustio"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/txtar"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/work"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/imports"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/par"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/robustio"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/txtar"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/work"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
 )
 
 // TestScript runs the tests in testdata/script/*.txt.

@@ -13,7 +13,7 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/robustio"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/robustio"
 )
 
 const patternSuffix = ".tmp"

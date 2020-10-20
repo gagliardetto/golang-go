@@ -5,8 +5,8 @@
 package ssa
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
 )
 
 // nilcheckelim eliminates unnecessary nil checks.

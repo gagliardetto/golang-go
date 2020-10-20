@@ -6,8 +6,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/obscuretestdata"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/obscuretestdata"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -44,7 +44,7 @@ func testMain(m *testing.M) int {
 		fmt.Println("GoTool failed:", err)
 		return 2
 	}
-	out, err := exec.Command(gotool, "build", "-o", testnmpath, "github.com/gagliardetto/codemill/cmd/nm").CombinedOutput()
+	out, err := exec.Command(gotool, "build", "-o", testnmpath, "github.com/gagliardetto/golang-go/cmd/nm").CombinedOutput()
 	if err != nil {
 		fmt.Printf("go build -o %v cmd/nm: %v\n%s", testnmpath, err, string(out))
 		return 2
@@ -64,7 +64,7 @@ func TestNonGoExecs(t *testing.T) {
 		"debug/pe/testdata/gcc-386-mingw-exec",
 		"debug/plan9obj/testdata/amd64-plan9-exec",
 		"debug/plan9obj/testdata/386-plan9-exec",
-		"github.com/gagliardetto/codemill/not-internal/xcoff/testdata/gcc-ppc64-aix-dwarf2-exec",
+		"github.com/gagliardetto/golang-go/not-internal/xcoff/testdata/gcc-ppc64-aix-dwarf2-exec",
 	}
 	for _, f := range testfiles {
 		exepath := filepath.Join(runtime.GOROOT(), "src", f)

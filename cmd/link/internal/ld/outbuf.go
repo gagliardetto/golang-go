@@ -6,8 +6,8 @@ package ld
 
 import (
 	"bufio"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
-	"github.com/gagliardetto/codemill/cmd/link/internal/sym"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/link/internal/sym"
 	"encoding/binary"
 	"log"
 	"os"

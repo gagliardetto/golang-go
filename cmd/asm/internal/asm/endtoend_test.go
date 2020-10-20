@@ -17,9 +17,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gagliardetto/codemill/cmd/asm/internal/lex"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/lex"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 )
 
 // An end-to-end test for the assembler: Do we print what we parse?

@@ -4,7 +4,7 @@
 
 package ssa
 
-import "github.com/gagliardetto/codemill/cmd/internal/src"
+import "github.com/gagliardetto/golang-go/cmd/internal/src"
 
 // trim removes blocks with no code in them.
 // These blocks were inserted to remove critical edges.

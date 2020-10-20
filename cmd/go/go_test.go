@@ -12,8 +12,8 @@ import (
 	"flag"
 	"fmt"
 	"go/format"
-	"github.com/gagliardetto/codemill/not-internal/race"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/race"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io"
 	"io/ioutil"
 	"log"
@@ -27,10 +27,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cache"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/robustio"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cache"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/robustio"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
 )
 
 var (
@@ -126,7 +126,7 @@ func TestMain(m *testing.M) {
 	// It is not a standard go command flag; use os.Getenv, not cfg.Getenv.
 	if os.Getenv("GO_GCFLAGS") != "" {
 		fmt.Fprintf(os.Stderr, "testing: warning: no tests to run\n") // magic string for cmd/go
-		fmt.Printf("github.com/gagliardetto/codemill/cmd/go test is not compatible with $GO_GCFLAGS being set\n")
+		fmt.Printf("github.com/gagliardetto/golang-go/cmd/go test is not compatible with $GO_GCFLAGS being set\n")
 		fmt.Printf("SKIP\n")
 		return
 	}
@@ -214,7 +214,7 @@ func TestMain(m *testing.M) {
 		hostGOARCH := goEnv("GOHOSTARCH")
 		if hostGOOS != runtime.GOOS || hostGOARCH != runtime.GOARCH {
 			fmt.Fprintf(os.Stderr, "testing: warning: no tests to run\n") // magic string for cmd/go
-			fmt.Printf("github.com/gagliardetto/codemill/cmd/go test is not compatible with GOOS/GOARCH != GOHOSTOS/GOHOSTARCH (%s/%s != %s/%s)\n", runtime.GOOS, runtime.GOARCH, hostGOOS, hostGOARCH)
+			fmt.Printf("github.com/gagliardetto/golang-go/cmd/go test is not compatible with GOOS/GOARCH != GOHOSTOS/GOHOSTARCH (%s/%s != %s/%s)\n", runtime.GOOS, runtime.GOARCH, hostGOOS, hostGOARCH)
 			fmt.Printf("SKIP\n")
 			return
 		}
@@ -1318,7 +1318,7 @@ func TestGoListStdDoesNotIncludeCommands(t *testing.T) {
 	defer tg.cleanup()
 	tg.parallel()
 	tg.run("list", "std")
-	tg.grepStdoutNot("github.com/gagliardetto/codemill/cmd/", "go list std shows commands")
+	tg.grepStdoutNot("github.com/gagliardetto/golang-go/cmd/", "go list std shows commands")
 }
 
 func TestGoListCmdOnlyShowsCommands(t *testing.T) {
@@ -1330,7 +1330,7 @@ func TestGoListCmdOnlyShowsCommands(t *testing.T) {
 	tg.run("list", "cmd")
 	out := strings.TrimSpace(tg.getStdout())
 	for _, line := range strings.Split(out, "\n") {
-		if !strings.Contains(line, "github.com/gagliardetto/codemill/cmd/") {
+		if !strings.Contains(line, "github.com/gagliardetto/golang-go/cmd/") {
 			t.Error("go list cmd shows non-commands")
 			break
 		}
@@ -1369,9 +1369,9 @@ func TestGoListDeps(t *testing.T) {
 	if runtime.Compiler != "gccgo" {
 		// Check the list is in dependency order.
 		tg.run("list", "-deps", "math")
-		want := "github.com/gagliardetto/codemill/not-internal/cpu\nunsafe\nmath/bits\nmath\n"
+		want := "github.com/gagliardetto/golang-go/not-internal/cpu\nunsafe\nmath/bits\nmath\n"
 		out := tg.stdout.String()
-		if !strings.Contains(out, "github.com/gagliardetto/codemill/not-internal/cpu") {
+		if !strings.Contains(out, "github.com/gagliardetto/golang-go/not-internal/cpu") {
 			// Some systems don't use internal/cpu.
 			want = "unsafe\nmath/bits\nmath\n"
 		}
@@ -1403,7 +1403,7 @@ func TestGoListTest(t *testing.T) {
 	tg.grepStdoutNot(`^testing \[sort.test\]$`, "unexpected test copy of testing")
 	tg.grepStdoutNot(`^testing$`, "unexpected real copy of testing")
 
-	tg.run("list", "-test", "github.com/gagliardetto/codemill/cmd/dist", "github.com/gagliardetto/codemill/cmd/doc")
+	tg.run("list", "-test", "github.com/gagliardetto/golang-go/cmd/dist", "github.com/gagliardetto/golang-go/cmd/doc")
 	tg.grepStdout(`^cmd/dist$`, "missing cmd/dist")
 	tg.grepStdout(`^cmd/doc$`, "missing cmd/doc")
 	tg.grepStdout(`^cmd/doc\.test$`, "missing cmd/doc test")
@@ -3254,12 +3254,12 @@ func TestGoBuildOutput(t *testing.T) {
 	tg.run("build", "-o", "p.a", "p.go")
 	tg.wantArchive("p.a")
 
-	tg.run("build", "github.com/gagliardetto/codemill/cmd/gofmt")
+	tg.run("build", "github.com/gagliardetto/golang-go/cmd/gofmt")
 	tg.wantExecutable("gofmt"+exeSuffix, "go build cmd/gofmt did not write gofmt"+exeSuffix)
 	tg.must(os.Remove(tg.path("gofmt" + exeSuffix)))
 	tg.mustNotExist("gofmt" + nonExeSuffix)
 
-	tg.run("build", "-o", "mygofmt", "github.com/gagliardetto/codemill/cmd/gofmt")
+	tg.run("build", "-o", "mygofmt", "github.com/gagliardetto/golang-go/cmd/gofmt")
 	tg.wantExecutable("mygofmt", "go build -o mygofmt cmd/gofmt did not write mygofmt")
 	tg.mustNotExist("mygofmt.exe")
 	tg.mustNotExist("gofmt")
@@ -3275,7 +3275,7 @@ func TestGoBuildOutput(t *testing.T) {
 	tg.mustNotExist("atomic.a")
 	tg.mustNotExist("atomic.exe")
 
-	tg.runFail("build", "-o", "whatever", "github.com/gagliardetto/codemill/cmd/gofmt", "sync/atomic")
+	tg.runFail("build", "-o", "whatever", "github.com/gagliardetto/golang-go/cmd/gofmt", "sync/atomic")
 	tg.grepStderr("multiple packages", "did not reject -o with multiple packages")
 }
 

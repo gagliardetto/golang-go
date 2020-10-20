@@ -183,7 +183,7 @@ func main() {
 			//   extra care when printing them - ignore since it is not
 			//   going to change w/o a language change.
 			// - We don't care about the API of commands.
-			if name != "unsafe" && !strings.HasPrefix(name, "github.com/gagliardetto/codemill/cmd/") {
+			if name != "unsafe" && !strings.HasPrefix(name, "github.com/gagliardetto/golang-go/cmd/") {
 				if name == "runtime/cgo" && !context.CgoEnabled {
 					// w.Import(name) will return nil
 					continue

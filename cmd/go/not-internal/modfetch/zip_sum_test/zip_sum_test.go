@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"flag"
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io"
 	"io/ioutil"
 	"os"
@@ -29,9 +29,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modfetch"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modload"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modfetch"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modload"
 
 	"golang.org/x/mod/module"
 )

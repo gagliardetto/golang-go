@@ -8,9 +8,9 @@
 package ld
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
-	"github.com/gagliardetto/codemill/cmd/link/internal/sym"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/link/internal/sym"
 	"debug/pe"
 	"encoding/binary"
 	"fmt"

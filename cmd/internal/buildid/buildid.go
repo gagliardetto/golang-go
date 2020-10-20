@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"debug/elf"
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/xcoff"
+	"github.com/gagliardetto/golang-go/not-internal/xcoff"
 	"io"
 	"os"
 	"strconv"

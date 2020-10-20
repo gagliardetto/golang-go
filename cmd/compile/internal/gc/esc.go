@@ -5,7 +5,7 @@
 package gc
 
 import (
-	"github.com/gagliardetto/codemill/cmd/compile/internal/types"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/types"
 	"fmt"
 )
 

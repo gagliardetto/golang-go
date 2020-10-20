@@ -4,7 +4,7 @@
 package ssa
 
 import "math"
-import "github.com/gagliardetto/codemill/cmd/compile/internal/types"
+import "github.com/gagliardetto/golang-go/cmd/compile/internal/types"
 
 func rewriteValueRISCV64(v *Value) bool {
 	switch v.Op {

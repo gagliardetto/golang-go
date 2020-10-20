@@ -21,11 +21,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cache"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/load"
-	"github.com/gagliardetto/codemill/cmd/internal/buildid"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cache"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/load"
+	"github.com/gagliardetto/golang-go/cmd/internal/buildid"
 )
 
 // A Builder holds global state about a build.
@@ -291,14 +291,14 @@ func (b *Builder) Init() {
 	}
 
 	if err := CheckGOOSARCHPair(cfg.Goos, cfg.Goarch); err != nil {
-		fmt.Fprintf(os.Stderr, "github.com/gagliardetto/codemill/cmd/go: %v\n", err)
+		fmt.Fprintf(os.Stderr, "github.com/gagliardetto/golang-go/cmd/go: %v\n", err)
 		base.SetExitStatus(2)
 		base.Exit()
 	}
 
 	for _, tag := range cfg.BuildContext.BuildTags {
 		if strings.Contains(tag, ",") {
-			fmt.Fprintf(os.Stderr, "github.com/gagliardetto/codemill/cmd/go: -tags space-separated list contains comma\n")
+			fmt.Fprintf(os.Stderr, "github.com/gagliardetto/golang-go/cmd/go: -tags space-separated list contains comma\n")
 			base.SetExitStatus(2)
 			base.Exit()
 		}

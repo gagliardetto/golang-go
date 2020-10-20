@@ -6,11 +6,11 @@
 package fix
 
 import (
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/load"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modload"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/load"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modload"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
 	"fmt"
 	"os"
 )

@@ -31,12 +31,12 @@ package work
 
 import (
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/lazyregexp"
+	"github.com/gagliardetto/golang-go/not-internal/lazyregexp"
 	"regexp"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/load"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/load"
 )
 
 var re = lazyregexp.New

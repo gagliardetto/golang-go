@@ -10,7 +10,7 @@ import (
 	"bytes"
 	"fmt"
 	"go/build"
-	"github.com/gagliardetto/codemill/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/not-internal/cfg"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -18,7 +18,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 )
 
 // These are general "build flags" used by build and other commands.

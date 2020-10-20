@@ -5,7 +5,7 @@
 package asm
 
 import (
-	"github.com/gagliardetto/codemill/cmd/asm/internal/lex"
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/lex"
 	"strings"
 	"testing"
 )

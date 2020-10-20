@@ -9,7 +9,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/trace"
+	"github.com/gagliardetto/golang-go/not-internal/trace"
 	"io"
 	"io/ioutil"
 	"net/http"

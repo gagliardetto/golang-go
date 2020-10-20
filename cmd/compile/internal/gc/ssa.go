@@ -13,12 +13,12 @@ import (
 
 	"bufio"
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/ssa"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/types"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/ssa"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/types"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
 )
 
 var ssaConfig *ssa.Config

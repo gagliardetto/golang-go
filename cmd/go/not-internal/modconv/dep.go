@@ -6,7 +6,7 @@ package modconv
 
 import (
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/lazyregexp"
+	"github.com/gagliardetto/golang-go/not-internal/lazyregexp"
 	"net/url"
 	"path"
 	"strconv"

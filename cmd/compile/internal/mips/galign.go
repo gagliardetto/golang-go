@@ -5,10 +5,10 @@
 package mips
 
 import (
-	"github.com/gagliardetto/codemill/cmd/compile/internal/gc"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/ssa"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/mips"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/gc"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/ssa"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/mips"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 )
 
 func Init(arch *gc.Arch) {

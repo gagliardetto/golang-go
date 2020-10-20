@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io/ioutil"
 	"log"
 	"os"
@@ -70,7 +70,7 @@ func Build(t *testing.T) {
 }
 
 func vetCmd(t *testing.T, arg, pkg string) *exec.Cmd {
-	cmd := exec.Command(testenv.GoToolPath(t), "vet", "-vettool="+binary, arg, path.Join("github.com/gagliardetto/codemill/cmd/vet/testdata", pkg))
+	cmd := exec.Command(testenv.GoToolPath(t), "vet", "-vettool="+binary, arg, path.Join("github.com/gagliardetto/golang-go/cmd/vet/testdata", pkg))
 	cmd.Env = os.Environ()
 	return cmd
 }

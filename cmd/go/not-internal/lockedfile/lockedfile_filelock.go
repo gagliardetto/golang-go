@@ -9,7 +9,7 @@ package lockedfile
 import (
 	"os"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/lockedfile/internal/filelock"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/lockedfile/internal/filelock"
 )
 
 func openFile(name string, flag int, perm os.FileMode) (*os.File, error) {

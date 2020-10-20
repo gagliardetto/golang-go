@@ -9,7 +9,7 @@ package dwarf
 
 import (
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 	"errors"
 	"fmt"
 	"os/exec"

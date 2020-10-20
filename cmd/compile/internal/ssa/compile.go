@@ -6,8 +6,8 @@ package ssa
 
 import (
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
 	"fmt"
 	"hash/crc32"
 	"log"

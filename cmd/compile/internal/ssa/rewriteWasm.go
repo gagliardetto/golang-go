@@ -3,8 +3,8 @@
 
 package ssa
 
-import "github.com/gagliardetto/codemill/cmd/internal/objabi"
-import "github.com/gagliardetto/codemill/cmd/compile/internal/types"
+import "github.com/gagliardetto/golang-go/cmd/internal/objabi"
+import "github.com/gagliardetto/golang-go/cmd/compile/internal/types"
 
 func rewriteValueWasm(v *Value) bool {
 	switch v.Op {

@@ -11,14 +11,14 @@ import (
 	"log"
 	"os"
 
-	"github.com/gagliardetto/codemill/cmd/asm/internal/arch"
-	"github.com/gagliardetto/codemill/cmd/asm/internal/asm"
-	"github.com/gagliardetto/codemill/cmd/asm/internal/flags"
-	"github.com/gagliardetto/codemill/cmd/asm/internal/lex"
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/arch"
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/asm"
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/flags"
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/lex"
 
-	"github.com/gagliardetto/codemill/cmd/internal/bio"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/bio"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 )
 
 func main() {

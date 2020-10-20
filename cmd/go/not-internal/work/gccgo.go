@@ -12,10 +12,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/load"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/load"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
 )
 
 // The Gccgo toolchain.
@@ -55,7 +55,7 @@ func checkGccgoBin() {
 	if gccgoErr == nil {
 		return
 	}
-	fmt.Fprintf(os.Stderr, "github.com/gagliardetto/codemill/cmd/go: gccgo: %s\n", gccgoErr)
+	fmt.Fprintf(os.Stderr, "github.com/gagliardetto/golang-go/cmd/go: gccgo: %s\n", gccgoErr)
 	base.SetExitStatus(2)
 	base.Exit()
 }

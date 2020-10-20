@@ -26,7 +26,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/internal/objfile"
+	"github.com/gagliardetto/golang-go/cmd/internal/objfile"
 )
 
 func printUsage(w *os.File) {

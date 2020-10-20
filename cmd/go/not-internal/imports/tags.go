@@ -4,7 +4,7 @@
 
 package imports
 
-import "github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
+import "github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
 
 var tags map[string]bool
 

@@ -6,8 +6,8 @@ package gc
 
 import (
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/types"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/types"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
 	"fmt"
 	"io"
 	"strconv"

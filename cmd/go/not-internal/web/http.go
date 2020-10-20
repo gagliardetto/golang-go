@@ -21,9 +21,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/auth"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/internal/browser"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/auth"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/internal/browser"
 )
 
 // impatientInsecureHTTPClient is used in -insecure mode,

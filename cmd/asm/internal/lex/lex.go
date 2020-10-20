@@ -12,7 +12,7 @@ import (
 	"strings"
 	"text/scanner"
 
-	"github.com/gagliardetto/codemill/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
 )
 
 // A ScanToken represents an input item. It is a simple wrapping of rune, as

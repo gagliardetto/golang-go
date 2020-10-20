@@ -7,7 +7,7 @@ package objfile
 import (
 	"bufio"
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
 	"container/list"
 	"debug/gosym"
 	"encoding/binary"

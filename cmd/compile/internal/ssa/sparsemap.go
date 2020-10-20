@@ -4,7 +4,7 @@
 
 package ssa
 
-import "github.com/gagliardetto/codemill/cmd/internal/src"
+import "github.com/gagliardetto/golang-go/cmd/internal/src"
 
 // from https://research.swtch.com/sparse
 // in turn, from Briggs and Torczon

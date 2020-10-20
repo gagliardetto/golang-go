@@ -35,7 +35,7 @@ func main() {
 	fmt.Fprintln(&b)
 	fmt.Fprintln(&b, "package gc")
 	fmt.Fprintln(&b)
-	fmt.Fprintln(&b, `import "github.com/gagliardetto/codemill/cmd/compile/internal/types"`)
+	fmt.Fprintln(&b, `import "github.com/gagliardetto/golang-go/cmd/compile/internal/types"`)
 
 	mkbuiltin(&b, "runtime")
 

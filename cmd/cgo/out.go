@@ -13,7 +13,7 @@ import (
 	"go/ast"
 	"go/printer"
 	"go/token"
-	"github.com/gagliardetto/codemill/not-internal/xcoff"
+	"github.com/gagliardetto/golang-go/not-internal/xcoff"
 	"io"
 	"io/ioutil"
 	"os"

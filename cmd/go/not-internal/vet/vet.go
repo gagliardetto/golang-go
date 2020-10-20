@@ -6,10 +6,10 @@
 package vet
 
 import (
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/load"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modload"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/work"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/load"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modload"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/work"
 	"path/filepath"
 )
 

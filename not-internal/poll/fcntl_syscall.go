@@ -7,7 +7,7 @@
 package poll
 
 import (
-	"github.com/gagliardetto/codemill/not-internal/syscall/unix"
+	"github.com/gagliardetto/golang-go/not-internal/syscall/unix"
 	"syscall"
 )
 

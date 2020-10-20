@@ -11,8 +11,8 @@ package arch
 import (
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/arm"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/arm"
 )
 
 var armLS = map[string]uint8{

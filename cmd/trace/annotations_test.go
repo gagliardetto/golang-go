@@ -11,7 +11,7 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	traceparser "github.com/gagliardetto/codemill/not-internal/trace"
+	traceparser "github.com/gagliardetto/golang-go/not-internal/trace"
 	"io/ioutil"
 	"reflect"
 	"runtime/debug"

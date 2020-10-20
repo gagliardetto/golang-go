@@ -86,7 +86,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/gagliardetto/codemill/cmd/internal/test2json"
+	"github.com/gagliardetto/golang-go/cmd/internal/test2json"
 )
 
 var (

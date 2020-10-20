@@ -7,7 +7,7 @@
 package cpu_test
 
 import (
-	. "github.com/gagliardetto/codemill/not-internal/cpu"
+	. "github.com/gagliardetto/golang-go/not-internal/cpu"
 	"os"
 	"runtime"
 	"testing"

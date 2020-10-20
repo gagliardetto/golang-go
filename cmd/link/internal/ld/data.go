@@ -34,10 +34,10 @@ package ld
 import (
 	"bufio"
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/gcprog"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
-	"github.com/gagliardetto/codemill/cmd/link/internal/sym"
+	"github.com/gagliardetto/golang-go/cmd/internal/gcprog"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/link/internal/sym"
 	"compress/zlib"
 	"encoding/binary"
 	"fmt"
@@ -54,8 +54,8 @@ func isRuntimeDepPkg(pkg string) bool {
 	switch pkg {
 	case "runtime",
 		"sync/atomic",      // runtime may call to sync/atomic, due to go:linkname
-		"github.com/gagliardetto/codemill/not-internal/bytealg", // for IndexByte
-		"github.com/gagliardetto/codemill/not-internal/cpu":     // for cpu features
+		"github.com/gagliardetto/golang-go/not-internal/bytealg", // for IndexByte
+		"github.com/gagliardetto/golang-go/not-internal/cpu":     // for cpu features
 		return true
 	}
 	return strings.HasPrefix(pkg, "runtime/internal/") && !strings.HasSuffix(pkg, "_test")

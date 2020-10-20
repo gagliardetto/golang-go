@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/gagliardetto/codemill/cmd/internal/buildid"
+	"github.com/gagliardetto/golang-go/cmd/internal/buildid"
 )
 
 func TestNoteReading(t *testing.T) {

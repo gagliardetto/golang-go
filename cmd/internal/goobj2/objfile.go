@@ -8,7 +8,7 @@ package goobj2 // TODO: replace the goobj package?
 
 import (
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/bio"
+	"github.com/gagliardetto/golang-go/cmd/internal/bio"
 	"encoding/binary"
 	"errors"
 	"fmt"

@@ -5,7 +5,7 @@
 package modload
 
 import (
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"regexp"
 	"strings"
 	"testing"

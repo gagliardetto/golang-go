@@ -9,7 +9,7 @@ import (
 	"flag"
 	"fmt"
 	"go/build"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -152,7 +152,7 @@ func TestSkipInternal(t *testing.T) {
 		{"net/http/internal-foo", true},
 		{"net/http/internal", false},
 		{"net/http/internal/bar", false},
-		{"github.com/gagliardetto/codemill/not-internal/foo", false},
+		{"github.com/gagliardetto/golang-go/not-internal/foo", false},
 		{"internal", false},
 	}
 	for _, tt := range tests {
@@ -179,7 +179,7 @@ func BenchmarkAll(b *testing.B) {
 		for _, context := range contexts {
 			w := NewWalker(context, filepath.Join(build.Default.GOROOT, "src"))
 			for _, name := range pkgNames {
-				if name != "unsafe" && !strings.HasPrefix(name, "github.com/gagliardetto/codemill/cmd/") && !internalPkg.MatchString(name) {
+				if name != "unsafe" && !strings.HasPrefix(name, "github.com/gagliardetto/golang-go/cmd/") && !internalPkg.MatchString(name) {
 					pkg, _ := w.Import(name)
 					w.export(pkg)
 				}

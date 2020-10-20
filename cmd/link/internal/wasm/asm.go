@@ -6,9 +6,9 @@ package wasm
 
 import (
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/link/internal/ld"
-	"github.com/gagliardetto/codemill/cmd/link/internal/sym"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/link/internal/ld"
+	"github.com/gagliardetto/golang-go/cmd/link/internal/sym"
 	"io"
 	"regexp"
 )

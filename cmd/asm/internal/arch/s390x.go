@@ -9,7 +9,7 @@
 package arch
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/obj/s390x"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/s390x"
 )
 
 func jumpS390x(word string) bool {

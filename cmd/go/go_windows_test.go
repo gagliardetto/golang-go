@@ -5,7 +5,7 @@
 package main
 
 import (
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/robustio"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/robustio"
 )
 
 func TestAbsolutePath(t *testing.T) {

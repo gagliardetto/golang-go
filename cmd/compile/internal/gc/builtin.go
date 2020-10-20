@@ -2,7 +2,7 @@
 
 package gc
 
-import "github.com/gagliardetto/codemill/cmd/compile/internal/types"
+import "github.com/gagliardetto/golang-go/cmd/compile/internal/types"
 
 var runtimeDecls = [...]struct {
 	name string

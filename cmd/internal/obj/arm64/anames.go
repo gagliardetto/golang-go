@@ -2,7 +2,7 @@
 
 package arm64
 
-import "github.com/gagliardetto/codemill/cmd/internal/obj"
+import "github.com/gagliardetto/golang-go/cmd/internal/obj"
 
 var Anames = []string{
 	obj.A_ARCHSPECIFIC: "ADC",

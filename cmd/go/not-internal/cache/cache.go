@@ -19,7 +19,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/renameio"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/renameio"
 )
 
 // An ActionID is a cache action key, the hash of a complete description of a

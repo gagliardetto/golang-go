@@ -29,7 +29,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/txtar"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/txtar"
 )
 
 func usage() {

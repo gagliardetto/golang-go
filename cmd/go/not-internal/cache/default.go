@@ -11,8 +11,8 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
 )
 
 // Default returns the default cache to use, or nil if no cache should be used.

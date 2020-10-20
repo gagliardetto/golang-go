@@ -14,7 +14,7 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/gagliardetto/codemill/not-internal/syscall/windows/registry"
+	"github.com/gagliardetto/golang-go/not-internal/syscall/windows/registry"
 )
 
 func randKeyName(prefix string) string {

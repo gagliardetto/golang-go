@@ -5,8 +5,8 @@
 package riscv64
 
 import (
-	"github.com/gagliardetto/codemill/cmd/compile/internal/gc"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/riscv"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/gc"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/riscv"
 )
 
 func Init(arch *gc.Arch) {

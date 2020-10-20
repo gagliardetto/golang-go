@@ -31,9 +31,9 @@
 package arm
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
-	"github.com/gagliardetto/codemill/cmd/link/internal/ld"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/link/internal/ld"
 )
 
 func Init() (*sys.Arch, ld.Arch) {

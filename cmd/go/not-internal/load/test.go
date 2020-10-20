@@ -6,8 +6,8 @@ package load
 
 import (
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
 	"errors"
 	"fmt"
 	"go/ast"
@@ -15,7 +15,7 @@ import (
 	"go/doc"
 	"go/parser"
 	"go/token"
-	"github.com/gagliardetto/codemill/not-internal/lazytemplate"
+	"github.com/gagliardetto/golang-go/not-internal/lazytemplate"
 	"path/filepath"
 	"sort"
 	"strings"

@@ -4,7 +4,7 @@
 
 package obj
 
-import "github.com/gagliardetto/codemill/cmd/internal/src"
+import "github.com/gagliardetto/golang-go/cmd/internal/src"
 
 // InlTree is a collection of inlined calls. The Parent field of an
 // InlinedCall is the index of another InlinedCall in InlTree.

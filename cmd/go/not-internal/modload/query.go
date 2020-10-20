@@ -13,11 +13,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/imports"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modfetch"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/search"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/imports"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modfetch"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/search"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
 
 	"golang.org/x/mod/module"
 	"golang.org/x/mod/semver"

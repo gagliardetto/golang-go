@@ -9,7 +9,7 @@ import (
 	"flag"
 	"fmt"
 	"go/build"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -49,7 +49,7 @@ func buildObjdump() error {
 	if err != nil {
 		return err
 	}
-	out, err := exec.Command(gotool, "build", "-o", exe, "github.com/gagliardetto/codemill/cmd/objdump").CombinedOutput()
+	out, err := exec.Command(gotool, "build", "-o", exe, "github.com/gagliardetto/golang-go/cmd/objdump").CombinedOutput()
 	if err != nil {
 		os.RemoveAll(tmp)
 		return fmt.Errorf("go build -o %v cmd/objdump: %v\n%s", exe, err, string(out))

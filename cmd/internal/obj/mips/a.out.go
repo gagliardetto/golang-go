@@ -30,7 +30,7 @@
 package mips
 
 import (
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
 )
 
 //go:generate go run ../stringer.go -i $GOFILE -o anames.go -p mips

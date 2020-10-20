@@ -8,7 +8,7 @@ package windows_test
 
 import (
 	"fmt"
-	"github.com/gagliardetto/codemill/not-internal/syscall/windows"
+	"github.com/gagliardetto/golang-go/not-internal/syscall/windows"
 	"os"
 	"os/exec"
 	"syscall"

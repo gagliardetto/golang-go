@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/robustio"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/robustio"
 )
 
 func TestConcurrentReadsAndWrites(t *testing.T) {

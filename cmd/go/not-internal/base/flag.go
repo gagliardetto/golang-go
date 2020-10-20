@@ -7,8 +7,8 @@ package base
 import (
 	"flag"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
 )
 
 // A StringsFlag is a command-line flag that interprets its argument

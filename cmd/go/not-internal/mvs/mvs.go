@@ -13,7 +13,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/par"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/par"
 
 	"golang.org/x/mod/module"
 )

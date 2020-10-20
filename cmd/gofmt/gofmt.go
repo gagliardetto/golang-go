@@ -21,7 +21,7 @@ import (
 	"runtime/pprof"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/internal/diff"
+	"github.com/gagliardetto/golang-go/cmd/internal/diff"
 )
 
 var (

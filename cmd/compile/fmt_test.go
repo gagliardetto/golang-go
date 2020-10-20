@@ -50,7 +50,7 @@ import (
 	"go/parser"
 	"go/token"
 	"go/types"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io"
 	"io/ioutil"
 	"log"
@@ -95,7 +95,7 @@ func TestFormats(t *testing.T) {
 				return filepath.SkipDir
 			}
 
-			importPath := filepath.Join("github.com/gagliardetto/codemill/cmd/compile", path)
+			importPath := filepath.Join("github.com/gagliardetto/golang-go/cmd/compile", path)
 			if blacklistedPackages[filepath.ToSlash(importPath)] {
 				return filepath.SkipDir
 			}

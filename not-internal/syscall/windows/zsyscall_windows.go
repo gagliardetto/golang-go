@@ -3,7 +3,7 @@
 package windows
 
 import (
-	"github.com/gagliardetto/codemill/not-internal/syscall/windows/sysdll"
+	"github.com/gagliardetto/golang-go/not-internal/syscall/windows/sysdll"
 	"syscall"
 	"unsafe"
 )

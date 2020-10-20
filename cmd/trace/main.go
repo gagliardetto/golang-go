@@ -6,11 +6,11 @@ package main
 
 import (
 	"bufio"
-	"github.com/gagliardetto/codemill/cmd/internal/browser"
+	"github.com/gagliardetto/golang-go/cmd/internal/browser"
 	"flag"
 	"fmt"
 	"html/template"
-	"github.com/gagliardetto/codemill/not-internal/trace"
+	"github.com/gagliardetto/golang-go/not-internal/trace"
 	"io"
 	"log"
 	"net"

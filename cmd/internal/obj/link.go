@@ -32,10 +32,10 @@ package obj
 
 import (
 	"bufio"
-	"github.com/gagliardetto/codemill/cmd/internal/dwarf"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/internal/dwarf"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
 	"fmt"
 	"sync"
 )

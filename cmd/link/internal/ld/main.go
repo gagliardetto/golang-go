@@ -32,9 +32,9 @@ package ld
 
 import (
 	"bufio"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
-	"github.com/gagliardetto/codemill/cmd/link/internal/sym"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/link/internal/sym"
 	"flag"
 	"log"
 	"os"
@@ -115,7 +115,7 @@ func Main(arch *sys.Arch, theArch Arch) {
 
 	final := gorootFinal()
 	addstrdata1(ctxt, "runtime/internal/sys.DefaultGoroot="+final)
-	addstrdata1(ctxt, "github.com/gagliardetto/codemill/cmd/internal/objabi.defaultGOROOT="+final)
+	addstrdata1(ctxt, "github.com/gagliardetto/golang-go/cmd/internal/objabi.defaultGOROOT="+final)
 
 	// TODO(matloob): define these above and then check flag values here
 	if ctxt.Arch.Family == sys.AMD64 && objabi.GOOS == "plan9" {

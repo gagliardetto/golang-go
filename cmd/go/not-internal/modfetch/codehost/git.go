@@ -20,9 +20,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/lockedfile"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/par"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/web"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/lockedfile"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/par"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/web"
 
 	"golang.org/x/mod/semver"
 )

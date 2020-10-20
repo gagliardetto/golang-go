@@ -8,9 +8,9 @@ package obj
 
 import (
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/bio"
-	"github.com/gagliardetto/codemill/cmd/internal/goobj2"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/bio"
+	"github.com/gagliardetto/golang-go/cmd/internal/goobj2"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 	"fmt"
 	"path/filepath"
 	"strings"

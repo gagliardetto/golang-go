@@ -5,9 +5,9 @@
 package arm
 
 import (
-	"github.com/gagliardetto/codemill/cmd/compile/internal/gc"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/arm"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/gc"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/arm"
 )
 
 func zerorange(pp *gc.Progs, p *obj.Prog, off, cnt int64, r0 *uint32) *obj.Prog {

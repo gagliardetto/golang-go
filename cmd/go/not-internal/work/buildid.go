@@ -12,11 +12,11 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cache"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
-	"github.com/gagliardetto/codemill/cmd/internal/buildid"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cache"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/internal/buildid"
 )
 
 // Build IDs

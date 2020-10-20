@@ -19,10 +19,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modfetch/codehost"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/web"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modfetch/codehost"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/web"
 
 	"golang.org/x/mod/module"
 	"golang.org/x/mod/semver"

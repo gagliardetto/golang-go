@@ -6,7 +6,7 @@ package poll_test
 
 import (
 	"errors"
-	"github.com/gagliardetto/codemill/not-internal/poll"
+	"github.com/gagliardetto/golang-go/not-internal/poll"
 	"os"
 	"syscall"
 )

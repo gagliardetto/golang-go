@@ -30,74 +30,74 @@ import (
 // by the command packages.
 // These will be imported during bootstrap as bootstrap/name, like bootstrap/math/big.
 var bootstrapDirs = []string{
-	"github.com/gagliardetto/codemill/cmd/asm",
-	"github.com/gagliardetto/codemill/cmd/asm/internal/arch",
-	"github.com/gagliardetto/codemill/cmd/asm/internal/asm",
-	"github.com/gagliardetto/codemill/cmd/asm/internal/flags",
-	"github.com/gagliardetto/codemill/cmd/asm/internal/lex",
-	"github.com/gagliardetto/codemill/cmd/cgo",
-	"github.com/gagliardetto/codemill/cmd/compile",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/amd64",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/arm",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/arm64",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/gc",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/logopt",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/mips",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/mips64",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/ppc64",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/riscv64",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/s390x",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/ssa",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/syntax",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/types",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/x86",
-	"github.com/gagliardetto/codemill/cmd/compile/internal/wasm",
-	"github.com/gagliardetto/codemill/cmd/internal/bio",
-	"github.com/gagliardetto/codemill/cmd/internal/gcprog",
-	"github.com/gagliardetto/codemill/cmd/internal/dwarf",
-	"github.com/gagliardetto/codemill/cmd/internal/edit",
-	"github.com/gagliardetto/codemill/cmd/internal/goobj2",
-	"github.com/gagliardetto/codemill/cmd/internal/objabi",
-	"github.com/gagliardetto/codemill/cmd/internal/obj",
-	"github.com/gagliardetto/codemill/cmd/internal/obj/arm",
-	"github.com/gagliardetto/codemill/cmd/internal/obj/arm64",
-	"github.com/gagliardetto/codemill/cmd/internal/obj/mips",
-	"github.com/gagliardetto/codemill/cmd/internal/obj/ppc64",
-	"github.com/gagliardetto/codemill/cmd/internal/obj/riscv",
-	"github.com/gagliardetto/codemill/cmd/internal/obj/s390x",
-	"github.com/gagliardetto/codemill/cmd/internal/obj/x86",
-	"github.com/gagliardetto/codemill/cmd/internal/obj/wasm",
-	"github.com/gagliardetto/codemill/cmd/internal/src",
-	"github.com/gagliardetto/codemill/cmd/internal/sys",
-	"github.com/gagliardetto/codemill/cmd/link",
-	"github.com/gagliardetto/codemill/cmd/link/internal/amd64",
-	"github.com/gagliardetto/codemill/cmd/link/internal/arm",
-	"github.com/gagliardetto/codemill/cmd/link/internal/arm64",
-	"github.com/gagliardetto/codemill/cmd/link/internal/ld",
-	"github.com/gagliardetto/codemill/cmd/link/internal/loadelf",
-	"github.com/gagliardetto/codemill/cmd/link/internal/loader",
-	"github.com/gagliardetto/codemill/cmd/link/internal/loadmacho",
-	"github.com/gagliardetto/codemill/cmd/link/internal/loadpe",
-	"github.com/gagliardetto/codemill/cmd/link/internal/loadxcoff",
-	"github.com/gagliardetto/codemill/cmd/link/internal/mips",
-	"github.com/gagliardetto/codemill/cmd/link/internal/mips64",
-	"github.com/gagliardetto/codemill/cmd/link/internal/objfile",
-	"github.com/gagliardetto/codemill/cmd/link/internal/ppc64",
-	"github.com/gagliardetto/codemill/cmd/link/internal/riscv64",
-	"github.com/gagliardetto/codemill/cmd/link/internal/s390x",
-	"github.com/gagliardetto/codemill/cmd/link/internal/sym",
-	"github.com/gagliardetto/codemill/cmd/link/internal/x86",
+	"github.com/gagliardetto/golang-go/cmd/asm",
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/arch",
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/asm",
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/flags",
+	"github.com/gagliardetto/golang-go/cmd/asm/internal/lex",
+	"github.com/gagliardetto/golang-go/cmd/cgo",
+	"github.com/gagliardetto/golang-go/cmd/compile",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/amd64",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/arm",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/arm64",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/gc",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/logopt",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/mips",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/mips64",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/ppc64",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/riscv64",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/s390x",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/ssa",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/syntax",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/types",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/x86",
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/wasm",
+	"github.com/gagliardetto/golang-go/cmd/internal/bio",
+	"github.com/gagliardetto/golang-go/cmd/internal/gcprog",
+	"github.com/gagliardetto/golang-go/cmd/internal/dwarf",
+	"github.com/gagliardetto/golang-go/cmd/internal/edit",
+	"github.com/gagliardetto/golang-go/cmd/internal/goobj2",
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi",
+	"github.com/gagliardetto/golang-go/cmd/internal/obj",
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/arm",
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/arm64",
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/mips",
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/ppc64",
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/riscv",
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/s390x",
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/x86",
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/wasm",
+	"github.com/gagliardetto/golang-go/cmd/internal/src",
+	"github.com/gagliardetto/golang-go/cmd/internal/sys",
+	"github.com/gagliardetto/golang-go/cmd/link",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/amd64",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/arm",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/arm64",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/ld",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/loadelf",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/loader",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/loadmacho",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/loadpe",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/loadxcoff",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/mips",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/mips64",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/objfile",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/ppc64",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/riscv64",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/s390x",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/sym",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/x86",
 	"compress/flate",
 	"compress/zlib",
-	"github.com/gagliardetto/codemill/cmd/link/internal/wasm",
+	"github.com/gagliardetto/golang-go/cmd/link/internal/wasm",
 	"container/heap",
 	"debug/dwarf",
 	"debug/elf",
 	"debug/macho",
 	"debug/pe",
-	"github.com/gagliardetto/codemill/not-internal/goversion",
-	"github.com/gagliardetto/codemill/not-internal/race",
-	"github.com/gagliardetto/codemill/not-internal/xcoff",
+	"github.com/gagliardetto/golang-go/not-internal/goversion",
+	"github.com/gagliardetto/golang-go/not-internal/race",
+	"github.com/gagliardetto/golang-go/not-internal/xcoff",
 	"math/big",
 	"math/bits",
 	"sort",
@@ -145,7 +145,7 @@ func bootstrapBuildTools() {
 		src := pathf("%s/src/%s", goroot, dir)
 		dst := pathf("%s/%s", base, dir)
 		xmkdirall(dst)
-		if dir == "github.com/gagliardetto/codemill/cmd/cgo" {
+		if dir == "github.com/gagliardetto/golang-go/cmd/cgo" {
 			// Write to src because we need the file both for bootstrap
 			// and for later in the main build.
 			mkzdefaultcc("", pathf("%s/zdefaultcc.go", src))
@@ -218,10 +218,10 @@ func bootstrapBuildTools() {
 
 	// Copy binaries into tool binary directory.
 	for _, name := range bootstrapDirs {
-		if !strings.HasPrefix(name, "github.com/gagliardetto/codemill/cmd/") {
+		if !strings.HasPrefix(name, "github.com/gagliardetto/golang-go/cmd/") {
 			continue
 		}
-		name = name[len("github.com/gagliardetto/codemill/cmd/"):]
+		name = name[len("github.com/gagliardetto/golang-go/cmd/"):]
 		if !strings.Contains(name, "/") {
 			copyfile(pathf("%s/%s%s", tooldir, name, exe), pathf("%s/bin/%s%s", workspace, name, exe), writeExec)
 		}
@@ -299,9 +299,9 @@ func bootstrapFixImports(srcFile string) string {
 		}
 		if strings.HasPrefix(line, `import "`) || strings.HasPrefix(line, `import . "`) ||
 			inBlock && (strings.HasPrefix(line, "\t\"") || strings.HasPrefix(line, "\t. \"")) {
-			line = strings.Replace(line, `"github.com/gagliardetto/codemill/cmd/`, `"bootstrap/cmd/`, -1)
+			line = strings.Replace(line, `"github.com/gagliardetto/golang-go/cmd/`, `"bootstrap/cmd/`, -1)
 			for _, dir := range bootstrapDirs {
-				if strings.HasPrefix(dir, "github.com/gagliardetto/codemill/cmd/") {
+				if strings.HasPrefix(dir, "github.com/gagliardetto/golang-go/cmd/") {
 					continue
 				}
 				line = strings.Replace(line, `"`+dir+`"`, `"bootstrap/`+dir+`"`, -1)

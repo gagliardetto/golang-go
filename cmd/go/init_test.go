@@ -5,7 +5,7 @@
 package main_test
 
 import (
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"os/exec"
 	"testing"
 )

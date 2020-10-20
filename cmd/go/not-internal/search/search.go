@@ -5,8 +5,8 @@
 package search
 
 import (
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
 	"fmt"
 	"go/build"
 	"log"
@@ -108,7 +108,7 @@ func MatchPackages(pattern string) *Match {
 			// packages under cmd/vendor. At least as of
 			// March, 2017, there is one there for the
 			// vendored pprof tool.
-			if pattern == "cmd" && strings.HasPrefix(pkg.ImportPath, "github.com/gagliardetto/codemill/cmd/vendor") && pkg.Name == "main" {
+			if pattern == "cmd" && strings.HasPrefix(pkg.ImportPath, "github.com/gagliardetto/golang-go/cmd/vendor") && pkg.Name == "main" {
 				return nil
 			}
 

@@ -16,12 +16,12 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/cfg"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/load"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/str"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/load"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/str"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
 	"crypto/sha1"
 )
 
@@ -62,7 +62,7 @@ func (gcToolchain) gc(b *Builder, a *Action, archive string, importcfg []byte, s
 	}
 	compilingRuntime := p.Standard && (p.ImportPath == "runtime" || strings.HasPrefix(p.ImportPath, "runtime/internal"))
 	// The runtime package imports a couple of general internal packages.
-	if p.Standard && (p.ImportPath == "github.com/gagliardetto/codemill/not-internal/cpu" || p.ImportPath == "github.com/gagliardetto/codemill/not-internal/bytealg") {
+	if p.Standard && (p.ImportPath == "github.com/gagliardetto/golang-go/not-internal/cpu" || p.ImportPath == "github.com/gagliardetto/golang-go/not-internal/bytealg") {
 		compilingRuntime = true
 	}
 	if compilingRuntime {
@@ -79,7 +79,7 @@ func (gcToolchain) gc(b *Builder, a *Action, archive string, importcfg []byte, s
 	extFiles := len(p.CgoFiles) + len(p.CFiles) + len(p.CXXFiles) + len(p.MFiles) + len(p.FFiles) + len(p.SFiles) + len(p.SysoFiles) + len(p.SwigFiles) + len(p.SwigCXXFiles)
 	if p.Standard {
 		switch p.ImportPath {
-		case "bytes", "github.com/gagliardetto/codemill/not-internal/poll", "net", "os", "runtime/pprof", "runtime/trace", "sync", "syscall", "time":
+		case "bytes", "github.com/gagliardetto/golang-go/not-internal/poll", "net", "os", "runtime/pprof", "runtime/trace", "sync", "syscall", "time":
 			extFiles++
 		}
 	}
@@ -505,7 +505,7 @@ func (gcToolchain) ld(b *Builder, root *Action, out, importcfg, mainpkg string) 
 
 	// Store BuildID inside toolchain binaries as a unique identifier of the
 	// tool being run, for use by content-based staleness determination.
-	if root.Package.Goroot && strings.HasPrefix(root.Package.ImportPath, "github.com/gagliardetto/codemill/cmd/") {
+	if root.Package.Goroot && strings.HasPrefix(root.Package.ImportPath, "github.com/gagliardetto/golang-go/cmd/") {
 		// External linking will include our build id in the external
 		// linker's build id, which will cause our build id to not
 		// match the next time the tool is built.

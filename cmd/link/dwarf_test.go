@@ -6,10 +6,10 @@ package main
 
 import (
 	"bytes"
-	cmddwarf "github.com/gagliardetto/codemill/cmd/internal/dwarf"
-	"github.com/gagliardetto/codemill/cmd/internal/objfile"
+	cmddwarf "github.com/gagliardetto/golang-go/cmd/internal/dwarf"
+	"github.com/gagliardetto/golang-go/cmd/internal/objfile"
 	"debug/dwarf"
-	"github.com/gagliardetto/codemill/not-internal/testenv"
+	"github.com/gagliardetto/golang-go/not-internal/testenv"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -28,15 +28,15 @@ func testDWARF(t *testing.T, buildmode string, expectDWARF bool, env ...string) 
 		t.Skip("skipping on plan9; no DWARF symbol table in executables")
 	}
 
-	out, err := exec.Command(testenv.GoToolPath(t), "list", "-f", "{{.Stale}}", "github.com/gagliardetto/codemill/cmd/link").CombinedOutput()
+	out, err := exec.Command(testenv.GoToolPath(t), "list", "-f", "{{.Stale}}", "github.com/gagliardetto/golang-go/cmd/link").CombinedOutput()
 	if err != nil {
 		t.Fatalf("go list: %v\n%s", err, out)
 	}
 	if string(out) != "false\n" {
 		if os.Getenv("GOROOT_FINAL_OLD") != "" {
-			t.Skip("github.com/gagliardetto/codemill/cmd/link is stale, but $GOROOT_FINAL_OLD is set")
+			t.Skip("github.com/gagliardetto/golang-go/cmd/link is stale, but $GOROOT_FINAL_OLD is set")
 		}
-		t.Fatalf("github.com/gagliardetto/codemill/cmd/link is stale - run go install cmd/link")
+		t.Fatalf("github.com/gagliardetto/golang-go/cmd/link is stale - run go install cmd/link")
 	}
 
 	for _, prog := range []string{"testprog", "testprogcgo"} {

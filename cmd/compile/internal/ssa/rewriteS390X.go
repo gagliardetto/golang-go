@@ -3,8 +3,8 @@
 
 package ssa
 
-import "github.com/gagliardetto/codemill/cmd/compile/internal/types"
-import "github.com/gagliardetto/codemill/cmd/internal/obj/s390x"
+import "github.com/gagliardetto/golang-go/cmd/compile/internal/types"
+import "github.com/gagliardetto/golang-go/cmd/internal/obj/s390x"
 
 func rewriteValueS390X(v *Value) bool {
 	switch v.Op {

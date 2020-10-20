@@ -6,7 +6,7 @@ package obj
 
 import (
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 	"fmt"
 	"strings"
 )

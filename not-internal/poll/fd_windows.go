@@ -6,8 +6,8 @@ package poll
 
 import (
 	"errors"
-	"github.com/gagliardetto/codemill/not-internal/race"
-	"github.com/gagliardetto/codemill/not-internal/syscall/windows"
+	"github.com/gagliardetto/golang-go/not-internal/race"
+	"github.com/gagliardetto/golang-go/not-internal/syscall/windows"
 	"io"
 	"runtime"
 	"sync"

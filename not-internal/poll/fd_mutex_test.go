@@ -5,7 +5,7 @@
 package poll_test
 
 import (
-	. "github.com/gagliardetto/codemill/not-internal/poll"
+	. "github.com/gagliardetto/golang-go/not-internal/poll"
 	"math/rand"
 	"runtime"
 	"strings"

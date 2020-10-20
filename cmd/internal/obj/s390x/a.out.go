@@ -29,7 +29,7 @@
 
 package s390x
 
-import "github.com/gagliardetto/codemill/cmd/internal/obj"
+import "github.com/gagliardetto/golang-go/cmd/internal/obj"
 
 //go:generate go run ../stringer.go -i $GOFILE -o anames.go -p s390x
 

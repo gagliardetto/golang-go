@@ -11,7 +11,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/internal/buildid"
+	"github.com/gagliardetto/golang-go/cmd/internal/buildid"
 )
 
 func usage() {

@@ -4,7 +4,7 @@
 
 package modload
 
-import "github.com/gagliardetto/codemill/cmd/go/not-internal/base"
+import "github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
 
 // TODO(rsc): The "module code layout" section needs to be written.
 

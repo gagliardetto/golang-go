@@ -6,13 +6,13 @@ package loader
 
 import (
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/bio"
-	"github.com/gagliardetto/codemill/cmd/internal/dwarf"
-	"github.com/gagliardetto/codemill/cmd/internal/goobj2"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
-	"github.com/gagliardetto/codemill/cmd/link/internal/sym"
+	"github.com/gagliardetto/golang-go/cmd/internal/bio"
+	"github.com/gagliardetto/golang-go/cmd/internal/dwarf"
+	"github.com/gagliardetto/golang-go/cmd/internal/goobj2"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/link/internal/sym"
 	"fmt"
 	"log"
 	"os"
@@ -400,7 +400,7 @@ func (l *Loader) checkdup(name string, i Sym, r *oReader, dup Sym) {
 	if len(p) != len(pdup) {
 		reason = fmt.Sprintf("new length %d != old length %d", len(p), len(pdup))
 	}
-	fmt.Fprintf(os.Stderr, "github.com/gagliardetto/codemill/cmd/link: while reading object for '%v': duplicate symbol '%s', previous def at '%v', with mismatched payload: %s\n", r.unit.Lib, name, rdup.unit.Lib, reason)
+	fmt.Fprintf(os.Stderr, "github.com/gagliardetto/golang-go/cmd/link: while reading object for '%v': duplicate symbol '%s', previous def at '%v', with mismatched payload: %s\n", r.unit.Lib, name, rdup.unit.Lib, reason)
 
 	// For the moment, whitelist DWARF subprogram DIEs for
 	// auto-generated wrapper functions. What seems to happen

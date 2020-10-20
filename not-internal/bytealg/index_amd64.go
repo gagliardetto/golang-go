@@ -4,7 +4,7 @@
 
 package bytealg
 
-import "github.com/gagliardetto/codemill/not-internal/cpu"
+import "github.com/gagliardetto/golang-go/not-internal/cpu"
 
 const MaxBruteForce = 64
 

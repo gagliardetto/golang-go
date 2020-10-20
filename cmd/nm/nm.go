@@ -12,7 +12,7 @@ import (
 	"os"
 	"sort"
 
-	"github.com/gagliardetto/codemill/cmd/internal/objfile"
+	"github.com/gagliardetto/golang-go/cmd/internal/objfile"
 )
 
 const helpText = `usage: go tool nm [options] file...

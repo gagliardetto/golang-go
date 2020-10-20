@@ -26,8 +26,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/internal/edit"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/edit"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 )
 
 // A Package collects information about the package we're going to write.

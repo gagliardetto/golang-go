@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"go/ast"
 	"go/token"
-	. "github.com/gagliardetto/codemill/not-internal/reflectlite"
+	. "github.com/gagliardetto/golang-go/not-internal/reflectlite"
 	"io"
 	"testing"
 )

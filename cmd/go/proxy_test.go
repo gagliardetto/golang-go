@@ -23,10 +23,10 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modfetch"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modfetch/codehost"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/par"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/txtar"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modfetch"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modfetch/codehost"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/par"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/txtar"
 
 	"golang.org/x/mod/module"
 	"golang.org/x/mod/semver"

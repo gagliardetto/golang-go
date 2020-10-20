@@ -11,9 +11,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modfetch"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/par"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modfetch"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/par"
 
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/module"

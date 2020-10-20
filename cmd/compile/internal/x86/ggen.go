@@ -5,9 +5,9 @@
 package x86
 
 import (
-	"github.com/gagliardetto/codemill/cmd/compile/internal/gc"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/x86"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/gc"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/x86"
 )
 
 func zerorange(pp *gc.Progs, p *obj.Prog, off, cnt int64, ax *uint32) *obj.Prog {

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gagliardetto/codemill/cmd/internal/diff"
+	"github.com/gagliardetto/golang-go/cmd/internal/diff"
 )
 
 type testCase struct {

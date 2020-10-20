@@ -202,9 +202,9 @@ package gc
 import (
 	"bufio"
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/compile/internal/types"
-	"github.com/gagliardetto/codemill/cmd/internal/goobj2"
-	"github.com/gagliardetto/codemill/cmd/internal/src"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/types"
+	"github.com/gagliardetto/golang-go/cmd/internal/goobj2"
+	"github.com/gagliardetto/golang-go/cmd/internal/src"
 	"encoding/binary"
 	"fmt"
 	"io"

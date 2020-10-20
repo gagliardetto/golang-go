@@ -14,11 +14,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/base"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/lockedfile"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modfetch"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modload"
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/work"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/base"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/lockedfile"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modfetch"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modload"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/work"
 
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/module"

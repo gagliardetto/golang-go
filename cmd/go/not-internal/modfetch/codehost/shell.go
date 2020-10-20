@@ -20,7 +20,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gagliardetto/codemill/cmd/go/not-internal/modfetch/codehost"
+	"github.com/gagliardetto/golang-go/cmd/go/not-internal/modfetch/codehost"
 )
 
 func usage() {

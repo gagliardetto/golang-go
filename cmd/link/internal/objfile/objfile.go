@@ -11,12 +11,12 @@ package objfile
 import (
 	"bufio"
 	"bytes"
-	"github.com/gagliardetto/codemill/cmd/internal/bio"
-	"github.com/gagliardetto/codemill/cmd/internal/dwarf"
-	"github.com/gagliardetto/codemill/cmd/internal/obj"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
-	"github.com/gagliardetto/codemill/cmd/internal/sys"
-	"github.com/gagliardetto/codemill/cmd/link/internal/sym"
+	"github.com/gagliardetto/golang-go/cmd/internal/bio"
+	"github.com/gagliardetto/golang-go/cmd/internal/dwarf"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/internal/sys"
+	"github.com/gagliardetto/golang-go/cmd/link/internal/sym"
 	"fmt"
 	"io"
 	"log"
@@ -403,7 +403,7 @@ overwrite:
 				reason = fmt.Sprintf("new length %d != old length %d",
 					len(data), len(dup.P))
 			}
-			fmt.Fprintf(os.Stderr, "github.com/gagliardetto/codemill/cmd/link: while reading object for '%v': duplicate symbol '%s', previous def at '%v', with mismatched payload: %s\n", r.lib, dup, dup.Unit.Lib, reason)
+			fmt.Fprintf(os.Stderr, "github.com/gagliardetto/golang-go/cmd/link: while reading object for '%v': duplicate symbol '%s', previous def at '%v', with mismatched payload: %s\n", r.lib, dup, dup.Unit.Lib, reason)
 
 			// For the moment, whitelist DWARF subprogram DIEs for
 			// auto-generated wrapper functions. What seems to happen

@@ -5,9 +5,9 @@
 package ppc64
 
 import (
-	"github.com/gagliardetto/codemill/cmd/compile/internal/gc"
-	"github.com/gagliardetto/codemill/cmd/internal/obj/ppc64"
-	"github.com/gagliardetto/codemill/cmd/internal/objabi"
+	"github.com/gagliardetto/golang-go/cmd/compile/internal/gc"
+	"github.com/gagliardetto/golang-go/cmd/internal/obj/ppc64"
+	"github.com/gagliardetto/golang-go/cmd/internal/objabi"
 )
 
 func Init(arch *gc.Arch) {

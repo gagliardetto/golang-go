@@ -7,7 +7,7 @@ package buildid
 import (
 	"bytes"
 	"crypto/sha256"
-	"github.com/gagliardetto/codemill/not-internal/obscuretestdata"
+	"github.com/gagliardetto/golang-go/not-internal/obscuretestdata"
 	"io/ioutil"
 	"os"
 	"reflect"

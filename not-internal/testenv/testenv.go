@@ -13,7 +13,7 @@ package testenv
 import (
 	"errors"
 	"flag"
-	"github.com/gagliardetto/codemill/not-internal/cfg"
+	"github.com/gagliardetto/golang-go/not-internal/cfg"
 	"os"
 	"os/exec"
 	"path/filepath"
